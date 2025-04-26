@@ -17,3 +17,8 @@ Use Case: Mainly used for generating text (not embeddings) and small to medium m
 
 **Ollama**: is a software tool that makes it super easy to run large language models (LLMs) locally using LLaMA models or other models that Ollama supports.
 It comes with an easy-to-use CLI (command-line interface) and local HTTP API, so it's far easier to interact with, especially for integrating it with applications or systems.
+
+**Pickle files safety issue**:
+When you call FAISS.load_local(), LangChain internally uses pickle to load the saved FAISS index metadata.
+Pickle files can be dangerous because they can execute arbitrary Python code during loading.
+For safety, LangChain forces you to explicitly allow dangerous deserialization if you trust the file you're loading.
