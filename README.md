@@ -22,3 +22,20 @@ It comes with an easy-to-use CLI (command-line interface) and local HTTP API, so
 When you call FAISS.load_local(), LangChain internally uses pickle to load the saved FAISS index metadata.
 Pickle files can be dangerous because they can execute arbitrary Python code during loading.
 For safety, LangChain forces you to explicitly allow dangerous deserialization if you trust the file you're loading.
+
+
+<--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+# Advanced RAG
+* use filter to get relevant document
+* use bm25 for hybrid search
+* use reranking
+* HPT chunksize and chunkoverlapp and chunking method
+
+
+
+
+
+
+
