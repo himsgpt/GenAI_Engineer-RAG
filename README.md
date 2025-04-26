@@ -73,3 +73,17 @@ model = torch.compile(model)
 Use all CPU cores smartly:
 import torch
 torch.set_num_threads(8)
+
+**4. Use max_new_tokens instead of max_length**
+⚡ Safer to control how much output is generated:
+pipe = pipeline(
+    "text2text-generation",
+    model=model,
+    tokenizer=tokenizer,
+    max_new_tokens=256,  # Instead of max_length=1024
+    temperature=0.3,
+    device=-1,
+)
+max_length = input + output tokens
+
+max_new_tokens = only output tokens ✅ Faster and less memory needed
