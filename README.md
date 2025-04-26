@@ -9,3 +9,8 @@
 | ☁️ Hosted Open-Source APIs         | `HuggingFaceInferenceAPIEmbeddings`, Together AI, Replicate (custom clients)        | ✅ Yes           | ❌ No                    | Hosted inference of open models. Slower but avoids local setup.      |
 | ⚙️ Local Wrappers / CLI Simplicity | `Ollama`                                                                             | ❌ No            | ✅ Yes (on first run)    | Simplified local use. Wraps `llama.cpp`. Easy to start with.         |
 
+
+
+llama-cpp: is specifically built to run models from the LLaMA family (e.g., LLaMA-2, LLaMA-7B), and is a great option for running LLMs locally on CPUs and GPUs.
+Speed: Llama-cpp is optimized for low latency on CPU. It's known for providing fast local inference of LLaMA models without relying on external APIs.
+Use Case: Mainly used for generating text (not embeddings) and small to medium models.
