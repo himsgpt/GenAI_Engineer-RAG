@@ -11,6 +11,9 @@
 
 
 
-llama-cpp: is specifically built to run models from the LLaMA family (e.g., LLaMA-2, LLaMA-7B), and is a great option for running LLMs locally on CPUs and GPUs.
+**llama-cpp**: is specifically built to run models from the LLaMA family (e.g., LLaMA-2, LLaMA-7B), and is a great option for running LLMs locally on CPUs and GPUs.
 Speed: Llama-cpp is optimized for low latency on CPU. It's known for providing fast local inference of LLaMA models without relying on external APIs.
 Use Case: Mainly used for generating text (not embeddings) and small to medium models.
+
+**Ollama**: is a software tool that makes it super easy to run large language models (LLMs) locally using LLaMA models or other models that Ollama supports.
+It comes with an easy-to-use CLI (command-line interface) and local HTTP API, so it's far easier to interact with, especially for integrating it with applications or systems.
